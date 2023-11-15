@@ -1,4 +1,9 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
+baseURL = 'https://unitigris.github.io/HETIC-gitpages/'
+languageCode = 'fr-fr'
 title = 'My New Hugo Site'
 theme = 'ananke'
+
+[params]
+description = "Un blog personnel sur le développement web, et le déroulement de mon mastere CTO Tech lead "
+# Paramètres spécifiques au thème Ananke
+showReadingTime = true
