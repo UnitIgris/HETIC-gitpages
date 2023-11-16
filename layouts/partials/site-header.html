@@ -1,0 +1,12 @@
+<header
+  class="cover bg-top"
+  style="background-image: url('{{ $.Site.Params.bg_image }}');"
+>
+  <div class="pb3-m pb6-l" style="background-color: rgba(0, 0, 0, 0.752)">
+    {{ partial "site-navigation.html" . }}
+    <div class="main-block">
+      <h2 class="headTitle">{{ .Title | default .Site.Title }}</h2>
+      <h2 class="headsubTitle">{{ .Site.Params.sub }}</h2>
+    </div>
+  </div>
+</header>

@@ -1,10 +1,12 @@
 ---
-title: 'Mon Premier Article'
+title: 'Mes débuts avec Hugo'
 date: 2023-11-14T11:39:24+01:00
 draft: false
 tags: ["blog", "hugo"]
 categories: ["Développement Web", "GitHub-Pages"]
 author: 'Samuel LUNION'
+summary: 'Voici ma première expérience avec Hugo, un générateur de site statique.'
+featured_image: '/HETIC-gitpages/img/hugo.png'
 ---
 
 # Découverte de Hugo 

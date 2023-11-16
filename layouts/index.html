@@ -1,0 +1,43 @@
+{{ define "main" }} {{/* Define a section to pull recent posts from. For Hugo
+0.20, this will default to the section with the most number of pages. */}} {{
+$mainSections := .Site.Params.mainSections | default (slice "post") }} {{/*
+Create a variable with that section to use in multiple places. */}} {{ $section
+:= where .Site.RegularPages "Section" "in" $mainSections }}
+
+<div class="pa3 pa4-ns w-100 w-70-ns center">
+  {{ $latest_post := first 1 $section }}
+
+  <section class="section-home">
+    <div class="container">
+      <div class="box">
+        <div class="leftbox">
+          <img
+            class="img-fluid"
+            src="/HETIC-gitpages/img/4skeleton.jpg"
+            alt="Awsome team"
+          />
+        </div>
+        <div class="rightbox">
+          <h2>Pourquoi skeleton ?</h2>
+          <p class="lead">
+            L'utilisation de squelettes facilite la création rapide et efficace
+            de sites web en fournissant une structure prédéfinie qui peut être
+            adaptée et personnalisée selon les besoins spécifiques de chaque
+            page. Ces modèles permettent une approche systématique du
+            développement web, améliorant la cohérence visuelle et la gestion du
+            code. Ils sont souvent utilisés en conjonction avec des frameworks
+            ou des CMS pour simplifier le processus de création de sites web
+            dynamiques et réactifs.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="w-100 mw8">
+    {{ range $latest_post }}
+    <div class="relative w-100 mb4">{{ .Render "summary-with-image" }}</div>
+    {{ end }}
+  </section>
+</div>
+{{ end }}

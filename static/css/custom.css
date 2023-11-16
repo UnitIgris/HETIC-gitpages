@@ -1,6 +1,224 @@
 footer {
-    background-color: #0080ff;
-    color: #333;
-    text-align: center;
-    padding: 20px 0;
+  background-color: #7d95ad;
+  color: #333;
+  text-align: center;
+  padding: 20px 0;
+
+  > h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
   }
+  > div > ul {
+    padding: 0;
+    margin: 0;
+  }
+  .footer-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    > a {
+      width: fit-content;
+    }
+    
+  }
+}
+.button-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.35rem;
+  font-weight: 600;
+  height: 2rem;
+  min-width: 2rem;
+  font-size: 1rem;
+  padding-inline-start: 1rem;
+  padding-inline-end: 1rem;
+  color: white;
+  border: transparent;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button-item:hover {
+  background-color: rgba(222, 222, 222, 0.241);
+}
+.button-item.dark{
+  color: black;
+}
+.button-item.dark:hover {
+  background-color: rgba(0, 0, 0, 0.232);
+}
+
+@media screen and (max-width: 42em) {
+  .wrapper-item {
+    grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+  }
+}
+
+.main-block {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+}
+.container-item {
+  max-width: 640px;
+  padding-top: 4rem;
+}
+.wrapper-item {
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-width: 0px;
+  word-wrap: break-word;
+  border-radius: 0.375rem;
+  color: #fff;
+  border-width: 0;
+}
+
+.grid-item-wrapper {
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  background-color: transparent !important;
+  transition: all 0.4s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.8) !important;
+  border-width: 0px;
+  border-color: transparent !important;
+  &:hover {
+    box-shadow: 0 8px 16px 3px rgba(0, 0, 0, 0.6);
+    transform: translateY(-3px) scale(1.05) rotateX(15deg);
+    .grid-item-text {
+      transform: none;
+    }
+  }
+  .item-image {
+    width: 100%;
+    border-radius: 1px;
+  }
+  .grid-item-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    background: none;
+    transform: translateY(100%);
+    transition: all 0.3s 0.1s;
+  }
+}
+
+@media screen and (min-width: 48em) {
+  .headTitle {
+    line-height: 1.2;
+    font-size: 82px;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .headTitle {
+    font-size: 46px;
+    margin-bottom: 0.5rem;
+  }
+}
+.headTitle {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2.2px;
+  color: #ffffffb3;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.75rem;
+}
+
+@media screen and (min-width: 48em) {
+  .headsubTitle {
+    line-height: 1.2;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 30em) {
+  .headsubTitle {
+    font-size: 14px;
+  }
+}
+.headsubTitle {
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 2.2px;
+  color: #ffffffb3;
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+  .homeIcon {
+    display: none;
+  }
+}
+
+.section-home {
+  position: relative;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+
+  .container {
+    max-width: 960px;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    .box {
+      align-items: center;
+      justify-content: space-around;
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      @media screen and (max-width: 50em) {
+        grid-template-columns: repeat(1, minmax(0, 1fr)) !important;
+      }
+
+      .leftbox {
+        padding: 0 12px 0 12px;
+        margin-bottom: 3rem;
+        flex: 0 0 auto;
+
+        .img-fluid {
+          max-width: 100%;
+          height: auto;
+          border-radius: 63% 37% 30% 70%/67% 45% 55% 50%;
+        }
+      }
+      .rightbox {
+        padding: 0 12px 0 12px;
+        text-align: left;
+        flex: 0 0 auto;
+
+        > h2 {
+          font-weight: 600;
+          margin-bottom: 3rem;
+          font-size: 2.5rem;
+        }
+        > p.lead {
+          font-size: 1.25rem;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+}
+.img-viewhome {
+  object-fit: none;
+    object-position: 50% 46%;
+    height: 128px;
+    width: 100%;
+}
