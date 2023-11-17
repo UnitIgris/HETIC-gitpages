@@ -1,5 +1,5 @@
 baseURL = 'https://unitigris.github.io/HETIC-gitpages/'
-languageCode = 'fr-fr'
+languageCode = "fr-fr"
 title = "SKELETON'S BLOG"
 theme = 'ananke'
 

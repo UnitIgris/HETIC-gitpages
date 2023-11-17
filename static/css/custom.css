@@ -22,6 +22,11 @@ footer {
     }
   }
 }
+.serif {
+  font-family: Poppins,sans-serif;
+}
+
+
 .button-item {
   display: inline-flex;
   align-items: center;
@@ -247,4 +252,8 @@ footer {
 }
 .tag-item:hover{
   color: #000000!important;
+}
+.related-block{
+  border-radius: 5px;
+  background-color: #d4d4d4;
 }
