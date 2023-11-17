@@ -20,7 +20,6 @@ footer {
     > a {
       width: fit-content;
     }
-    
   }
 }
 .button-item {
@@ -42,7 +41,7 @@ footer {
 .button-item:hover {
   background-color: rgba(222, 222, 222, 0.241);
 }
-.button-item.dark{
+.button-item.dark {
   color: black;
 }
 .button-item.dark:hover {
@@ -218,7 +217,34 @@ footer {
 }
 .img-viewhome {
   object-fit: none;
-    object-position: 50% 46%;
-    height: 128px;
-    width: 100%;
+  object-position: 50% 46%;
+  height: 128px;
+  width: 100%;
+}
+
+.tags-stack {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.tag-item {
+  margin: 0 15px 5px 0;
+  display: inline-flex;
+  vertical-align: top;
+  align-items: center;
+  max-width: 100%;
+  font-weight: 500;
+  line-height: 1.2;
+  outline: 2px solid transparent;
+  min-width: 2rem;
+  min-height: 2rem;
+  font-size: 1rem;
+  background-color: #0000002f;
+  color: #1f1f1fca!important;
+  border-radius: 999px;
+}
+.tag-item:hover{
+  color: #000000!important;
 }
